@@ -4,7 +4,7 @@
 
 1. Created a EC2 with a ubuntu ami on aws. 
 
-2. ssh into EC2
+2. [ssh](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html) into EC2
 
 ![](images/Deploy7-1.PNG)
 
