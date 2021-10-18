@@ -10,12 +10,12 @@
 
 3. Install docker onto EC2:
 
-  a. Make a bash file
+  * Make a bash file
  ```
  $ nano docker_install.sh 
 ```
 
-  b. Copy and paste the code below in the [bash file](https://github.com/ibrahima1289/deploy7/blob/main/docker_install.sh) linked in this repo.
+  * Copy and paste the code below in the [bash file](https://github.com/ibrahima1289/deploy7/blob/main/docker_install.sh) linked in this repo.
   
   ![](images/Deploy7-2.PNG)
 
