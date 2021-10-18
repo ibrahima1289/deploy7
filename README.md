@@ -8,7 +8,7 @@
 
 ![](images/Deploy7-1.PNG)
 
-3. Install docker onto EC2:
+3. [Install docker](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html) onto EC2:
 
   * Make a bash file
  ```
