@@ -23,8 +23,9 @@
   ```
   Sudo chmod +x docker_install.sh
   ```
-5. Make sure you are in the directory where the bash file is before you run the bash file.<br>
-  Otherwise, specify the path where the bash file is.
+5. Make sure you are in the directory where the bash file is before you run the bash file.
+  
+  * Otherwise, specify the path where the bash file is.
   
   ```
   $ ./docker-install.sh
@@ -44,14 +45,16 @@ $ apt install openjdk-11-jre-headless
 
 1. Create a [github](https://docs.github.com/en/get-started/quickstart/create-a-repo) repo.
 
-2. Create [Jenkinsfile](https://github.com/ibrahima1289/deploy7/blob/main/Jenkinsfile) on that github repo.<br>
-Paste the code from the [pdf](https://github.com/ibrahima1289/DEPLOY07_ECS/blob/main/Deployment%237%20(1).pdf) into the jenkinsfile.
+2. Create [Jenkinsfile](https://github.com/ibrahima1289/deploy7/blob/main/Jenkinsfile) on that github repo.
+
+* Paste the code from the [pdf](https://github.com/ibrahima1289/DEPLOY07_ECS/blob/main/Deployment%237%20(1).pdf) into the jenkinsfile.
 
 3. Create a [Dockerfile](https://github.com/ibrahima1289/deploy7/blob/main/Dockerfile) on your github that has the instruction to create a Java application.
 
 4. Add the jar file to the repo.
 
-## Step 3: [AWS ECS](https://aws.amazon.com/ecs/) Set up<br>
+## Step 3: [AWS ECS](https://aws.amazon.com/ecs/) Set up
+
 **Creating a docker image and deploying it to AWS**
 
 1. Pull the Jenkins image from dockerhub by running this command:
@@ -65,29 +68,30 @@ docker pull jenkins/jenkins
 Elastic Container Service -> Clusters -> Create clusters -> Select Template (Net. Only) -> Cluster name -> Create 
 ```
 
-3. Create an [ECR](https://aws.amazon.com/ecr/) (Elastic Container Registry) registry<br>
-		We will use this repo to store our image.<br>
+3. Create an [ECR](https://aws.amazon.com/ecr/) (Elastic Container Registry) registry
+
+ * We will use this repo to store our image.
   
-  Flollow the steps below:
+ * Flollow the steps below:
   
   ```
   AWS -> Elastic Container Registry -> Public -> Repo name (same as docker image) -> create repo -> ARM 64 (Optional)
   ```
 		
-  We will need the [URI](https://aws.amazon.com/about-aws/whats-new/2018/07/amazon-workspaces-now-supports-custom-login-workflows-with-a-uri/) to push the image.
+ * We will need the [URI](https://aws.amazon.com/about-aws/whats-new/2018/07/amazon-workspaces-now-supports-custom-login-workflows-with-a-uri/) to push the image.
 
 4. Use the command below to install `awscli` which will allow AWS command to run
 ```
 $ sudo apt install awscli
 ```
 
-Give Docker CLI permission to access your Amazon account
+* Give Docker CLI permission to access your Amazon account
 
 ```
 $ aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin [your account number].dkr.ecr.us-east-1.amazonaws.com
 ```	
 
-You should see: **Login Succeeded**.
+* You should see: **Login Succeeded**.
 
 5. aws configure
 
@@ -97,7 +101,7 @@ You should see: **Login Succeeded**.
 $ docker tag [name of the app] [use the uri here]
 ```
 
-Push up the docker image to the repository (ECR)
+* Push up the docker image to the repository (ECR)
 
 ```
 $ docker push [aws-id].dkr.ecr.us-east-1.amazonaws.com/[name-of-app]
