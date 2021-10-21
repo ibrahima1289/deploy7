@@ -35,7 +35,7 @@
 
 7. Make sure you have Java installed (we used version 11): run the command below:
 ```
-$ apt install openjdk-11-jre-headless
+$ sudo apt install openjdk-11-jre-headless
 ```
 
  ![](images/Deploy7-3.PNG)
