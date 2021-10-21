@@ -2,7 +2,7 @@
 
 ## Step 1: [AWS EC2](https://aws.amazon.com/ec2/?ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc) Set up
 
-1. Created a EC2 with a ubuntu ami on aws. 
+1. Created a [EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) with a ubuntu ami on aws. 
 
 2. [ssh](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html) into EC2
 
