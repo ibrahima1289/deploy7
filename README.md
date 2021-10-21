@@ -75,7 +75,7 @@ Elastic Container Service -> Clusters -> Create clusters -> Select Template (Net
  * Flollow the steps below:
   
   ```
-  AWS -> Elastic Container Registry -> Public -> Repo name (same as docker image) -> create repo -> ARM 64 (Optional)
+  AWS -> Elastic Container Registry -> create a repository -> Public -> Repo name (same as docker image) -> create repo -> ARM 64 (Optional)
   ```
 		
  * We will need the [URI](https://aws.amazon.com/about-aws/whats-new/2018/07/amazon-workspaces-now-supports-custom-login-workflows-with-a-uri/) to push the image.
@@ -85,6 +85,8 @@ Elastic Container Service -> Clusters -> Create clusters -> Select Template (Net
 $ sudo apt install awscli
 ```
 
+5. aws configure
+
 * Give Docker CLI permission to access your Amazon account
 
 ```
@@ -93,7 +95,6 @@ $ aws ecr get-login-password --region us-east-1 | docker login --username AWS --
 
 * You should see: **Login Succeeded**.
 
-5. aws configure
 
 6. Tag the image
 
