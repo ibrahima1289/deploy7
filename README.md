@@ -80,10 +80,25 @@ Elastic Container Service -> Clusters -> Create clusters -> Select Template (Net
 		
  * We will need the [URI](https://aws.amazon.com/about-aws/whats-new/2018/07/amazon-workspaces-now-supports-custom-login-workflows-with-a-uri/) to push the image.
 
-4. Use the command below to install `awscli` which will allow AWS command to run
+4. Use the command below to install `awscli` version 2 which will allow AWS command to run
 ```
-$ sudo apt install awscli
+$ sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+$ sudo unzip awscliv2.zip
+$ sudo ./aws/install
 ```
+
+* If you have an error, run the command below"
+```
+$ sudo ./aws/install --update
+```
+
+* Finally run the command below to verify the installation:
+```
+$ aws --version
+```
+
+* You should see: 
+
 
 5. aws configure
 
