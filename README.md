@@ -28,7 +28,7 @@
   * Otherwise, specify the path where the bash file is.
   
   ```
-  $ ./docker-install.sh
+  $ ./docker_install.sh
   ```
 
 6. Exit and ssh back in.
