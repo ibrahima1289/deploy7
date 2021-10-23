@@ -4,6 +4,10 @@
 
 The goal for this deployment is to **build, test,** and **deploy** a Java application using Jenkins. The Jenkins image will be run on a Docker container which is hosted by a AWS EC2.
 
+## Prerequisite:
+
+Knowing how to **ssh** into an AWS EC2 and manage credentials in Jenkins are essential in order to complete this lab. 
+
 ## Requirements:
 
 * AWS
