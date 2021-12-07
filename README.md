@@ -17,7 +17,7 @@ Knowing how to **ssh** into an AWS EC2 and manage credentials in Jenkins are ess
 * Docker
 * Jenkins 
 
-## Precudure:
+## Procedure:
 
 ### Step 1: [AWS EC2](https://aws.amazon.com/ec2/?ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc) Set up
 
